@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nandeesh Kumbar | Software Engineer Portfolio - Full-Stack Developer specializing in high-performance web applications, scalable architectures, and clean code.">
+    <meta name="keywords" content="Nandeesh Kumbar, Software Engineer, Full Stack Developer, React, Java, JavaScript, Web Development, Portfolio">
+    <meta name="author" content="Nandeesh Kumbar">
+    <title>Nandeesh Kumbar | Software Engineer Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Background Gradient Glows -->
+    <div class="bg-glow bg-glow-1" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow-2" aria-hidden="true"></div>
+    <div class="bg-grid-overlay" aria-hidden="true"></div>
+
+    <!-- ==================== HEADER ==================== -->
+    <header id="site-header">
+        <nav class="nav-container">
+            <!-- Logo / Name -->
+            <a href="#hero" class="logo" aria-label="Home">
+                <span class="logo-symbol">&lt;/&gt;</span>
+                <span class="logo-text">Nandi<span class="logo-dot">.dev</span></span>
+            </a>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <div class="nav-menu-wrapper" id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#timeline" class="nav-link">Timeline</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+
+                <!-- Header Actions -->
+                <div class="header-actions">
+                    <!-- Night Mode Toggle Placeholder / Implementation -->
+                    <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle night mode" title="Toggle theme">
+                        <span class="theme-icon moon-icon" aria-hidden="true">🌙</span>
+                        <span class="theme-icon sun-icon" aria-hidden="true">☀️</span>
+                    </button>
+                    <a href="#contact" class="btn btn-sm btn-primary nav-cta">Let's Talk</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ==================== HERO SECTION ==================== -->
+        <section id="hero" class="section hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <!-- Status Badge -->
+                    <div class="status-badge-wrapper">
+                        <span class="status-badge">
+                            <span class="status-pulse"></span>
+                            Available for new opportunities & projects
+                        </span>
+                    </div>
+
+                    <!-- Hero content: name, title, introduction and CTA -->
+                    <h1 class="hero-title">
+                        Hello, I'm <span class="gradient-text">Nandi</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        Software Engineer <span class="subtitle-divider">|</span> Full-Stack Specialist
+                    </h2>
+                    <p class="hero-description">
+                        Building reliable, high-performance, and user-friendly software solutions. 
+                        Specialized in modern web ecosystems, distributed backend systems, and clean architecture that scales seamlessly.
+                    </p>
+
+                    <!-- Call-to-action buttons & Quick Socials -->
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View Projects</span>
+                            <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Contact Me</span>
+                            <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        </a>
+                        <div class="hero-social-links">
+                            <a href="https://github.com/Nandeesh18-dev" target="_blank" rel="noopener noreferrer" class="hero-social-icon-btn" title="GitHub (@Nandeesh18-dev)" aria-label="GitHub">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3.5 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/></svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/nandeesh-kumbar-03538a396" target="_blank" rel="noopener noreferrer" class="hero-social-icon-btn" title="LinkedIn Profile" aria-label="LinkedIn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                            </a>
+                            <a href="mailto:kumbarn41@gmail.com" class="hero-social-icon-btn" title="Send Email (kumbarn41@gmail.com)" aria-label="Email">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Metrics Strip -->
+                    <div class="hero-stats">
+                        <div class="hero-stat-item">
+                            <span class="stat-number">4+</span>
+                            <span class="stat-label">Years of Experience</span>
+                        </div>
+                        <div class="stat-separator"></div>
+                        <div class="hero-stat-item">
+                            <span class="stat-number">25+</span>
+                            <span class="stat-label">Projects Shipped</span>
+                        </div>
+                        <div class="stat-separator"></div>
+                        <div class="hero-stat-item">
+                            <span class="stat-number">99.9%</span>
+                            <span class="stat-label">System Reliability</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Interactive Visual Showcase -->
+                <div class="hero-visual">
+                    <div class="hero-profile-card">
+                        <!-- Profile Card Header with Portrait -->
+                        <div class="hero-portrait-header">
+                            <div class="portrait-avatar-wrapper">
+                                <div class="portrait-avatar-glow"></div>
+                                <img src="profile.jpg" alt="Nandi - Software Engineer" class="portrait-avatar-img">
+                                <span class="portrait-status-dot" title="Available for hire"></span>
+                            </div>
+                            <div class="portrait-info">
+                                <div class="portrait-name-line">
+                                    <h3 class="portrait-name">Nandi</h3>
+                                    <span class="verified-icon" title="Verified Engineer">
+                                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                                    </span>
+                                </div>
+                                <span class="portrait-role">Software Engineer</span>
+                                <div class="portrait-tags">
+                                    <span class="p-tag">⚡ Full-Stack</span>
+                                    <span class="p-tag">☕ Java</span>
+                                    <span class="p-tag">⚛️ React</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Code Terminal -->
+                        <div class="glass-terminal-card">
+                            <div class="terminal-header">
+                                <div class="terminal-dots">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                </div>
+                                <span class="terminal-title">developer.config.ts</span>
+                                <div class="terminal-chip">READY</div>
+                            </div>
+                            <div class="terminal-body">
+                                <pre class="code-block"><code><span class="token-keyword">const</span> <span class="token-variable">developer</span> = {
+  <span class="token-property">name</span>: <span class="token-string">'Nandeesh Kumbar'</span>,
+  <span class="token-property">title</span>: <span class="token-string">'Software Engineer'</span>,
+  <span class="token-property">coreStack</span>: [<span class="token-string">'Java'</span>, <span class="token-string">'TypeScript'</span>, <span class="token-string">'React'</span>, <span class="token-string">'Node.js'</span>],
+  <span class="token-property">github</span>: <span class="token-string">'@Nandeesh18-dev'</span>,
+  <span class="token-property">email</span>: <span class="token-string">'kumbarn41@gmail.com'</span>,
+  <span class="token-property">availableForHire</span>: <span class="token-boolean">true</span>
+};
+
+<span class="token-comment">// Run execution</span>
+<span class="token-function">developer</span>.<span class="token-function">buildNextGenerationSoftware</span>();</code></pre>
+                            </div>
+                            <div class="terminal-footer">
+                                <div class="badge-tag"><span class="badge-icon">⚡</span> Sub-second Latency</div>
+                                <div class="badge-tag"><span class="badge-icon">🛡️</span> Robust Architecture</div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Accent Badge -->
+                        <div class="floating-accent-card float-anim">
+                            <div class="floating-icon">🚀</div>
+                            <div class="floating-info">
+                                <strong>Full-Stack Ready</strong>
+                                <span>Frontend to Cloud DevOps</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==================== ABOUT SECTION ==================== -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">WHO I AM</span>
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Dedicated to creating elegant solutions for complex technical challenges.</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-narrative">
+                        <h3 class="about-heading">Transforming ideas into robust, scalable software products.</h3>
+                        <p class="about-text">
+                            Hello! I am a passionate Software Engineer focused on designing and building resilient, secure, and modern digital experiences. With a deep foundation in computer science and full-stack development, I bridge the gap between intuitive front-end interfaces and solid back-end architectures.
+                        </p>
+                        <p class="about-text">
+                            Over the years, I have worked across the entire software development lifecycle—from conceptual system architecture and API modeling to front-end micro-interactions, database optimization, and CI/CD automated deployments.
+                        </p>
+
+                        <!-- Highlights list -->
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <span class="highlight-icon">✓</span>
+                                <div>
+                                    <strong>Architectural Integrity</strong>
+                                    <p>Writing clean, testable, and maintainable code adhering to SOLID and modern design patterns.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <span class="highlight-icon">✓</span>
+                                <div>
+                                    <strong>User-Centered Engineering</strong>
+                                    <p>Ensuring ultra-responsive performance, accessible layouts, and seamless UX across all screen sizes.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <span class="highlight-icon">✓</span>
+                                <div>
+                                    <strong>End-to-End Ownership</strong>
+                                    <p>Driving projects from initial discovery and schema planning to production observability and scaling.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-cta-row">
+                            <a href="#contact" class="btn btn-primary btn-sm">Get In Touch</a>
+                            <a href="#timeline" class="btn btn-secondary btn-sm">View Career History</a>
+                        </div>
+                    </div>
+
+                    <!-- About Side Highlights Cards -->
+                    <div class="about-cards-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon-box">💻</div>
+                            <h4>Full-Stack Capabilities</h4>
+                            <p>Seamlessly integrating React/Next.js client layers with robust Java Spring Boot and Node.js microservices.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon-box">⚡</div>
+                            <h4>Performance Obsessed</h4>
+                            <p>Profiling database queries, minimizing bundle sizes, and optimizing caching layers with Redis.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon-box">🔒</div>
+                            <h4>Security & Standards</h4>
+                            <p>Implementing JWT/OAuth2 authentication, strict input validation, and enterprise-grade security practices.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon-box">🤝</div>
+                            <h4>Collaborative Teamwork</h4>
+                            <p>Active contributor to code reviews, agile sprints, mentorship, and comprehensive technical documentation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==================== SKILLS SECTION ==================== -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">TECHNICAL ARSENAL</span>
+                    <!-- Skills section: programming languages, tools and technologies -->
+                    <h2 class="section-title">Skills & Technologies</h2>
+                    <p class="section-subtitle">Proficient in modern tools, frameworks, and engineering standards.</p>
+                </div>
+
+                <!-- Structured Categories -->
+                <div class="skills-categorized-grid">
+                    <!-- Category 1: Languages & Core -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="category-icon">⚡</div>
+                            <div>
+                                <h3>Core Languages</h3>
+                                <span>Foundational programming strength</span>
+                            </div>
+                        </div>
+                        <ul class="skills-badges-list">
+                            <li class="skill-badge"><span class="badge-bullet"></span>Java</li>
+                            <li class="skill-badge"><span class="badge-bullet"></span>JavaScript (ES6+)</li>
+                            <li class="skill-badge"><span class="badge-bullet"></span>TypeScript</li>
+                            <li class="skill-badge"><span class="badge-bullet"></span>HTML5 & CSS3</li>
+                            <li class="skill-badge"><span class="badge-bullet"></span>SQL</li>
+                            <li class="skill-badge"><span class="badge-bullet"></span>Python</li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 2: Frontend Engineering -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="category-icon">🎨</div>
+                            <div>
+                                <h3>Frontend & UI</h3>
+                                <span>Modern, reactive user interfaces</span>
+                            </div>
+                        </div>
+                        <ul class="skills-badges-list">
+                            <li class="skill-badge"><span class="badge-bullet"></span>React.js</li>
+                            <li class="skill-badge"><span class="badge-bullet"></span>Next.js</li>
+                            <li class="skill-badge"><span class="badge-bullet"></span>Redux / Context API</li>
+                            <li class="skill-badge"><span class="badge-bullet"></span>Tailwind & Vanilla CSS</li>
+                            <li class="skill-badge"><span class="badge-bullet"></span>Responsive Design</li>
+                            <li class="skill-badge"><span class="badge-bullet"></span>Web Performance & SEO</li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 3: Backend & Architecture -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="category-icon">⚙️</div>
+                            <div>
+                                <h3>Backend & APIs</h3>
+                                <span>Scalable services & distributed systems</span>
+                            </div>
+                        </div>
+                        <ul class="skills-badges-list">
+                            <li class="skill-badge"><span class="badge-bullet"></span>Spring Boot</li>
+                            <li class="skill-badge"><span class="badge-bullet"></span>Node.js & Express</li>
+                            <li class="skill-badge"><span class="badge-bullet"></span>RESTful APIs</li>
+                            <li class="skill-badge"><span class="badge-bullet"></span>GraphQL</li>
+                            <li class="skill-badge"><span class="badge-bullet"></span>Microservices</li>
+                            <li class="skill-badge"><span class="badge-bullet"></span>Authentication (OAuth, JWT)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 4: Databases & DevOps -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="category-icon">🛠️</div>
+                            <div>
+                                <h3>Databases & DevOps</h3>
+                                <span>Persistence, containerization & deployment</span>
+                            </div>
+                        </div>
+                        <ul class="skills-badges-list">
+                            <li class="skill-badge"><span class="badge-bullet"></span>PostgreSQL</li>
+                            <li class="skill-badge"><span class="badge-bullet"></span>MySQL</li>
+                            <li class="skill-badge"><span class="badge-bullet"></span>MongoDB</li>
+                            <li class="skill-badge"><span class="badge-bullet"></span>Redis Caching</li>
+                            <li class="skill-badge"><span class="badge-bullet"></span>Git & GitHub</li>
+                            <li class="skill-badge"><span class="badge-bullet"></span>Docker & CI/CD</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Proficiency Bars showcase -->
+                <div class="proficiency-panel">
+                    <h3 class="panel-heading">Key Competencies & Proficiency</h3>
+                    <div class="proficiency-bars">
+                        <div class="bar-item">
+                            <div class="bar-info">
+                                <span>Full-Stack Development (React & Node/Java)</span>
+                                <span class="bar-percent">95%</span>
+                            </div>
+                            <div class="progress-track"><div class="progress-fill" style="width: 95%;"></div></div>
+                        </div>
+                        <div class="bar-item">
+                            <div class="bar-info">
+                                <span>Backend APIs & Architecture</span>
+                                <span class="bar-percent">90%</span>
+                            </div>
+                            <div class="progress-track"><div class="progress-fill" style="width: 90%;"></div></div>
+                        </div>
+                        <div class="bar-item">
+                            <div class="bar-info">
+                                <span>Database Design & Query Tuning (SQL & NoSQL)</span>
+                                <span class="bar-percent">88%</span>
+                            </div>
+                            <div class="progress-track"><div class="progress-fill" style="width: 88%;"></div></div>
+                        </div>
+                        <div class="bar-item">
+                            <div class="bar-info">
+                                <span>Modern UI/UX & Responsive Web Standards</span>
+                                <span class="bar-percent">92%</span>
+                            </div>
+                            <div class="progress-track"><div class="progress-fill" style="width: 92%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==================== TIMELINE SECTION ==================== -->
+        <section id="timeline" class="section timeline-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">CAREER PATHWAY</span>
+                    <!-- Timeline section: education, internships and work experience -->
+                    <h2 class="section-title">Timeline</h2>
+                    <p class="section-subtitle">My professional journey, academic milestones, and experience.</p>
+                </div>
+
+                <div class="timeline-wrapper">
+                    <!-- Column 1: Experience -->
+                    <div class="timeline-column">
+                        <div class="timeline-column-header">
+                            <div class="col-icon">💼</div>
+                            <h3>Work Experience</h3>
+                        </div>
+                        <div class="timeline-items-list">
+                            <!-- Timeline item 1 -->
+                            <article class="timeline-card">
+                                <div class="timeline-card-header">
+                                    <span class="timeline-period">2024 - Present</span>
+                                    <span class="timeline-role-badge">Full Time</span>
+                                </div>
+                                <h3 class="timeline-role">Software Engineer</h3>
+                                <h4 class="timeline-company">TechNova Solutions</h4>
+                                <p class="timeline-description">
+                                    Architecting distributed web services with Java Spring Boot and React. Spearheaded the migration of legacy monolith to microservices, reducing average API response latency by 38%.
+                                </p>
+                                <div class="timeline-tags">
+                                    <span>Java</span>
+                                    <span>Spring Boot</span>
+                                    <span>React</span>
+                                    <span>PostgreSQL</span>
+                                    <span>Docker</span>
+                                </div>
+                            </article>
+
+                            <!-- Timeline item 2 -->
+                            <article class="timeline-card">
+                                <div class="timeline-card-header">
+                                    <span class="timeline-period">2022 - 2024</span>
+                                    <span class="timeline-role-badge">Full Time</span>
+                                </div>
+                                <h3 class="timeline-role">Junior Software Engineer</h3>
+                                <h4 class="timeline-company">CloudPeak Systems</h4>
+                                <p class="timeline-description">
+                                    Developed responsive frontend web applications and REST APIs. Collaborated with cross-functional design teams to build accessible component libraries and improve customer engagement by 45%.
+                                </p>
+                                <div class="timeline-tags">
+                                    <span>JavaScript</span>
+                                    <span>Node.js</span>
+                                    <span>React</span>
+                                    <span>MongoDB</span>
+                                    <span>Git</span>
+                                </div>
+                            </article>
+
+                            <!-- Timeline item 3 -->
+                            <article class="timeline-card">
+                                <div class="timeline-card-header">
+                                    <span class="timeline-period">2021 - 2022</span>
+                                    <span class="timeline-role-badge">Internship</span>
+                                </div>
+                                <h3 class="timeline-role">Software Engineering Intern</h3>
+                                <h4 class="timeline-company">NextWave Labs</h4>
+                                <p class="timeline-description">
+                                    Assisted in building automated testing suites, fixing UI/UX bugs, and crafting database scripts for client analytics dashboards.
+                                </p>
+                                <div class="timeline-tags">
+                                    <span>HTML/CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>MySQL</span>
+                                    <span>Jest</span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Education & Certifications -->
+                    <div class="timeline-column">
+                        <div class="timeline-column-header">
+                            <div class="col-icon">🎓</div>
+                            <h3>Education & Credentials</h3>
+                        </div>
+                        <div class="timeline-items-list">
+                            <!-- Timeline item placeholder / real details -->
+                            <article class="timeline-card">
+                                <div class="timeline-card-header">
+                                    <span class="timeline-period">2018 - 2022</span>
+                                    <span class="timeline-role-badge">Degree</span>
+                                </div>
+                                <h3 class="timeline-role">Bachelor of Technology (B.Tech)</h3>
+                                <h4 class="timeline-company">Computer Science & Engineering</h4>
+                                <p class="timeline-description">
+                                    Graduated with First Class Honors (CGPA: 8.8/10). Coursework focused on Data Structures, Algorithms, Database Management Systems, Operating Systems, and Object-Oriented Software Design.
+                                </p>
+                                <div class="timeline-tags">
+                                    <span>Algorithms</span>
+                                    <span>OOP</span>
+                                    <span>DBMS</span>
+                                    <span>Computer Networks</span>
+                                </div>
+                            </article>
+
+                            <!-- Certification Item -->
+                            <article class="timeline-card">
+                                <div class="timeline-card-header">
+                                    <span class="timeline-period">2023</span>
+                                    <span class="timeline-role-badge">Certification</span>
+                                </div>
+                                <h3 class="timeline-role">Oracle Certified Java SE Developer</h3>
+                                <h4 class="timeline-company">Oracle University</h4>
+                                <p class="timeline-description">
+                                    Mastery of Core Java fundamentals, concurrency, memory management, lambda streams, and enterprise standards.
+                                </p>
+                                <div class="timeline-tags">
+                                    <span>Java SE 17</span>
+                                    <span>Concurrency</span>
+                                    <span>Design Patterns</span>
+                                </div>
+                            </article>
+
+                            <!-- Certification Item -->
+                            <article class="timeline-card">
+                                <div class="timeline-card-header">
+                                    <span class="timeline-period">2023</span>
+                                    <span class="timeline-role-badge">Certification</span>
+                                </div>
+                                <h3 class="timeline-role">AWS Certified Cloud Practitioner</h3>
+                                <h4 class="timeline-company">Amazon Web Services</h4>
+                                <p class="timeline-description">
+                                    Demonstrated cloud fluency, core AWS service architectures (EC2, S3, RDS, Lambda), security compliance, and cost optimization.
+                                </p>
+                                <div class="timeline-tags">
+                                    <span>Cloud Architecture</span>
+                                    <span>AWS EC2/S3</span>
+                                    <span>IAM Security</span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==================== PROJECTS SECTION ==================== -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">PORTFOLIO WORK</span>
+                    <!-- Projects section: showcase your best projects -->
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Real-world applications built with performance, security, and clean UX in mind.</p>
+                </div>
+
+                <!-- Project Filter Buttons -->
+                <div class="project-filters" role="tablist" aria-label="Filter projects">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+                    <button class="filter-btn" data-filter="backend">Backend & API</button>
+                    <button class="filter-btn" data-filter="frontend">Frontend & UI</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+                    <!-- Project 1: CloudPulse -->
+                    <article class="project-card" data-category="fullstack">
+                        <div class="project-preview-mockup mockup-gradient-1">
+                            <div class="mockup-screen">
+                                <div class="mockup-bar">
+                                    <div class="mockup-dots"><span class="m-dot red"></span><span class="m-dot yellow"></span><span class="m-dot green"></span></div>
+                                    <div class="mockup-url">cloudpulse-metrics.io</div>
+                                </div>
+                                <div class="mockup-content">
+                                    <div class="metric-row">
+                                        <div class="metric-widget"><span class="widget-label">Uptime</span><span class="widget-val text-emerald">99.99%</span></div>
+                                        <div class="metric-widget"><span class="widget-label">Latency</span><span class="widget-val">42ms</span></div>
+                                        <div class="metric-widget"><span class="widget-label">Requests</span><span class="widget-val">1.2M/d</span></div>
+                                    </div>
+                                    <div class="chart-bars">
+                                        <span class="bar" style="height: 40%"></span>
+                                        <span class="bar" style="height: 75%"></span>
+                                        <span class="bar" style="height: 55%"></span>
+                                        <span class="bar" style="height: 90%"></span>
+                                        <span class="bar" style="height: 65%"></span>
+                                        <span class="bar" style="height: 85%"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card-body">
+                            <div class="project-meta">
+                                <span class="project-category-tag">Full Stack</span>
+                                <span class="project-year">2024</span>
+                            </div>
+                            <h3 class="project-title">CloudPulse - Distributed APM & Metrics</h3>
+                            <p class="project-description">
+                                A high-throughput telemetry and application performance monitoring platform featuring real-time log ingestion, alert dispatchers, and intuitive analytics dashboards.
+                            </p>
+                            <div class="project-tech-stack">
+                                <span>Java Spring Boot</span>
+                                <span>React</span>
+                                <span>PostgreSQL</span>
+                                <span>Redis</span>
+                                <span>Docker</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/Nandeesh18-dev" target="_blank" rel="noopener noreferrer" class="btn-link">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/></svg>
+                                    Code
+                                </a>
+                                <a href="#projects" class="btn-link btn-link-accent">
+                                    <span>View Project</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: NexusCommerce -->
+                    <article class="project-card" data-category="fullstack">
+                        <div class="project-preview-mockup mockup-gradient-2">
+                            <div class="mockup-screen">
+                                <div class="mockup-bar">
+                                    <div class="mockup-dots"><span class="m-dot red"></span><span class="m-dot yellow"></span><span class="m-dot green"></span></div>
+                                    <div class="mockup-url">nexus-commerce.store</div>
+                                </div>
+                                <div class="mockup-content">
+                                    <div class="store-grid">
+                                        <div class="store-item"><div class="item-img"></div><div class="item-line"></div></div>
+                                        <div class="store-item"><div class="item-img"></div><div class="item-line"></div></div>
+                                        <div class="store-item"><div class="item-img"></div><div class="item-line"></div></div>
+                                    </div>
+                                    <div class="cart-pill"><span class="cart-badge">🛒 3 items</span> • $284.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card-body">
+                            <div class="project-meta">
+                                <span class="project-category-tag">E-Commerce</span>
+                                <span class="project-year">2024</span>
+                            </div>
+                            <h3 class="project-title">NexusCommerce - Headless E-Commerce Suite</h3>
+                            <p class="project-description">
+                                Modern headless storefront with instant search, stripe payments, inventory synchronization, and custom admin dashboard with sub-second page transitions.
+                            </p>
+                            <div class="project-tech-stack">
+                                <span>Next.js</span>
+                                <span>TypeScript</span>
+                                <span>Node.js</span>
+                                <span>Stripe</span>
+                                <span>Tailwind CSS</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/Nandeesh18-dev" target="_blank" rel="noopener noreferrer" class="btn-link">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/></svg>
+                                    Code
+                                </a>
+                                <a href="#projects" class="btn-link btn-link-accent">
+                                    <span>View Project</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: DevFlow -->
+                    <article class="project-card" data-category="frontend">
+                        <div class="project-preview-mockup mockup-gradient-3">
+                            <div class="mockup-screen">
+                                <div class="mockup-bar">
+                                    <div class="mockup-dots"><span class="m-dot red"></span><span class="m-dot yellow"></span><span class="m-dot green"></span></div>
+                                    <div class="mockup-url">devflow-kanban.app</div>
+                                </div>
+                                <div class="mockup-content">
+                                    <div class="kanban-cols">
+                                        <div class="k-col"><div class="k-card done"></div><div class="k-card"></div></div>
+                                        <div class="k-col"><div class="k-card active"></div></div>
+                                        <div class="k-col"><div class="k-card"></div></div>
+                                    </div>
+                                    <div class="live-collab-badge">🟢 4 engineers editing</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card-body">
+                            <div class="project-meta">
+                                <span class="project-category-tag">Frontend & Realtime</span>
+                                <span class="project-year">2023</span>
+                            </div>
+                            <h3 class="project-title">DevFlow - Collaborative Sprint Tracker</h3>
+                            <p class="project-description">
+                                Real-time agile collaboration tool supporting drag-and-drop task orchestration, live presence indicators, markdown sprint notes, and dark mode theming.
+                            </p>
+                            <div class="project-tech-stack">
+                                <span>React</span>
+                                <span>TypeScript</span>
+                                <span>WebSockets</span>
+                                <span>Tailwind CSS</span>
+                                <span>Zustand</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/Nandeesh18-dev" target="_blank" rel="noopener noreferrer" class="btn-link">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/></svg>
+                                    Code
+                                </a>
+                                <a href="#projects" class="btn-link btn-link-accent">
+                                    <span>View Project</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: SecureAuth Microservice -->
+                    <article class="project-card" data-category="backend">
+                        <div class="project-preview-mockup mockup-gradient-4">
+                            <div class="mockup-screen">
+                                <div class="mockup-bar">
+                                    <div class="mockup-dots"><span class="m-dot red"></span><span class="m-dot yellow"></span><span class="m-dot green"></span></div>
+                                    <div class="mockup-url">api.auth-gateway.internal</div>
+                                </div>
+                                <div class="mockup-content">
+                                    <div class="api-console">
+                                        <div class="console-line"><span class="http-post">POST</span> /v1/auth/tokens 200 OK</div>
+                                        <div class="console-line"><span class="http-get">GET</span> /v1/users/permissions 200 OK</div>
+                                        <div class="token-badge">JWT • RSA-256 Verified</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card-body">
+                            <div class="project-meta">
+                                <span class="project-category-tag">Backend Service</span>
+                                <span class="project-year">2023</span>
+                            </div>
+                            <h3 class="project-title">AuthGuard - Enterprise IAM & Gateway</h3>
+                            <p class="project-description">
+                                A high-concurrency authentication and access delegation microservice equipped with rate-limiting, OAuth2/OIDC provider integration, and Redis session store.
+                            </p>
+                            <div class="project-tech-stack">
+                                <span>Java</span>
+                                <span>Spring Security</span>
+                                <span>JWT</span>
+                                <span>Redis</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/Nandeesh18-dev" target="_blank" rel="noopener noreferrer" class="btn-link">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/></svg>
+                                    Code
+                                </a>
+                                <a href="#projects" class="btn-link btn-link-accent">
+                                    <span>View Project</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==================== SERVICES / INTERESTS SECTION ==================== -->
+        <section id="services" class="section services-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">CORE CAPABILITIES</span>
+                    <!-- Optional section: services, interests or areas of expertise -->
+                    <h2 class="section-title">What I Do</h2>
+                    <p class="section-subtitle">Delivering high-value engineering solutions across the full stack.</p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service Card 1 -->
+                    <div class="service-card">
+                        <div class="service-icon-wrapper">
+                            <span class="service-icon">🌐</span>
+                        </div>
+                        <h3 class="service-title">Full-Stack Web Development</h3>
+                        <p class="service-description">
+                            Crafting end-to-end web applications with modern frontend frameworks (React, Next.js) and solid backend logic (Node.js, Java), ensuring speed, SEO, and responsiveness.
+                        </p>
+                        <ul class="service-features">
+                            <li>Modern Reactive SPAs & SSR</li>
+                            <li>Component-driven Architecture</li>
+                            <li>State Management & Optimization</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service Card 2 -->
+                    <div class="service-card">
+                        <div class="service-icon-wrapper">
+                            <span class="service-icon">⚙️</span>
+                        </div>
+                        <h3 class="service-title">RESTful & Microservice APIs</h3>
+                        <p class="service-description">
+                            Designing clean, secure, and well-documented APIs. Ensuring low latency, high concurrency, robust rate limiting, and predictable error handling.
+                        </p>
+                        <ul class="service-features">
+                            <li>Spring Boot & Express Services</li>
+                            <li>OAuth2, JWT & RBAC Security</li>
+                            <li>OpenAPI / Swagger Documentation</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service Card 3 -->
+                    <div class="service-card">
+                        <div class="service-icon-wrapper">
+                            <span class="service-icon">🗄️</span>
+                        </div>
+                        <h3 class="service-title">Database Design & Tuning</h3>
+                        <p class="service-description">
+                            Architecting normalized relational and document databases with index optimization, caching strategies, and reliable transactional integrity.
+                        </p>
+                        <ul class="service-features">
+                            <li>PostgreSQL & MySQL Schema Design</li>
+                            <li>MongoDB & Redis In-Memory Caching</li>
+                            <li>Query Performance Optimization</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service Card 4 -->
+                    <div class="service-card">
+                        <div class="service-icon-wrapper">
+                            <span class="service-icon">☁️</span>
+                        </div>
+                        <h3 class="service-title">Cloud Deployment & CI/CD</h3>
+                        <p class="service-description">
+                            Streamlining releases through Docker containerization, automated testing workflows, and reproducible cloud environments on AWS.
+                        </p>
+                        <ul class="service-features">
+                            <li>Docker Containerization</li>
+                            <li>GitHub Actions CI/CD Pipelines</li>
+                            <li>Cloud Monitoring & Logging</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==================== CONTACT SECTION ==================== -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">LET'S CONNECT</span>
+                    <!-- Contact section: email, social links and contact form -->
+                    <h2 class="section-title">Contact Me</h2>
+                    <p class="section-subtitle">Have an exciting opportunity or question? I'd love to hear from you.</p>
+                </div>
+
+                <div class="contact-wrapper">
+                    <!-- Left: Contact Information & Cards -->
+                    <div class="contact-info-panel">
+                        <h3 class="info-title">Let's build something remarkable together.</h3>
+                        <p class="info-text">
+                            Whether you're looking for a dedicated full-stack software engineer, need architectural consulting, or want to discuss a project, feel free to reach out.
+                        </p>
+
+                        <div class="info-details-list">
+                            <div class="info-detail-item">
+                                <div class="detail-icon">✉️</div>
+                                <div>
+                                    <span class="detail-label">Email Address</span>
+                                    <div class="copy-email-group">
+                                        <a href="mailto:kumbarn41@gmail.com" class="detail-value" id="email-text">kumbarn41@gmail.com</a>
+                                        <button type="button" class="copy-btn" id="copy-email-btn" title="Copy to clipboard" aria-label="Copy email">
+                                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info-detail-item">
+                                <div class="detail-icon">📍</div>
+                                <div>
+                                    <span class="detail-label">Location</span>
+                                    <span class="detail-value">Available Worldwide (Remote & Hybrid)</span>
+                                </div>
+                            </div>
+
+                            <div class="info-detail-item">
+                                <div class="detail-icon">⚡</div>
+                                <div>
+                                    <span class="detail-label">Response Time</span>
+                                    <span class="detail-value">Usually within 24 business hours</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Link Badges -->
+                        <div class="social-connect-box">
+                            <span class="social-box-title">Find me on professional networks:</span>
+                            <div class="social-pill-links">
+                                <a href="https://github.com/Nandeesh18-dev" target="_blank" rel="noopener noreferrer" class="social-pill">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/></svg>
+                                    GitHub
+                                </a>
+                                <a href="https://www.linkedin.com/in/nandeesh-kumbar-03538a396" target="_blank" rel="noopener noreferrer" class="social-pill">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                                    LinkedIn
+                                </a>
+                                <a href="mailto:kumbarn41@gmail.com" class="social-pill">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                                    Email Me
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Contact Form -->
+                    <div class="contact-form-panel">
+                        <!-- Contact form placeholder / interactive form -->
+                        <form id="portfolio-contact-form" class="styled-contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <div class="input-wrapper">
+                                    <input type="text" id="name" name="name" placeholder="e.g. Alex Morgan" required autocomplete="name">
+                                </div>
+                                <span class="input-error" id="name-error">Please enter your name.</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <div class="input-wrapper">
+                                    <input type="email" id="email" name="email" placeholder="alex@company.com" required autocomplete="email">
+                                </div>
+                                <span class="input-error" id="email-error">Please provide a valid email address.</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <div class="input-wrapper">
+                                    <textarea id="message" name="message" rows="5" placeholder="Hi Nandi, I'd like to discuss a project..." required></textarea>
+                                </div>
+                                <span class="input-error" id="message-error">Please enter your message (at least 10 characters).</span>
+                            </div>
+
+                            <button type="submit" id="submit-btn" class="btn btn-primary btn-submit">
+                                <span class="btn-text">Send Message</span>
+                                <span class="spinner" aria-hidden="true"></span>
+                                <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+                            </button>
+
+                            <!-- Live Feedback Notice -->
+                            <div id="form-feedback" class="form-feedback" role="alert" aria-live="polite"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-top">
+                <a href="#hero" class="logo">
+                    <span class="logo-symbol">&lt;/&gt;</span>
+                    <span class="logo-text">Nandi<span class="logo-dot">.dev</span></span>
+                </a>
+                <p class="footer-tagline">Crafting scalable and user-focused digital solutions.</p>
+                <!-- Social links -->
+                <div class="footer-social-links">
+                    <a href="https://github.com/Nandeesh18-dev" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/></svg>
+                        GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/nandeesh-kumbar-03538a396" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                        LinkedIn
+                    </a>
+                    <a href="mailto:kumbarn41@gmail.com" aria-label="Email">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        Email
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                <!-- Footer: copyright -->
+                <p class="footer-copy">&copy; 2026 Nandi. All rights reserved. Crafted with clean HTML, CSS & JavaScript.</p>
+                
+                <a href="#hero" class="back-to-top" id="back-to-top-btn" aria-label="Back to top">
+                    <span>Back to top</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
